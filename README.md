@@ -174,8 +174,8 @@ To set up and run this project on your local machine, follow these steps.
 
 1.  **Clone the repository:**
     ```bash
-    git clone <https://github.com/manasvihow/bitespeed>
-    cd <bitespeed>
+    git clone https://github.com/manasvihow/bitespeed
+    cd bitespeed
     ```
 
 2.  **Create and activate a virtual environment:**
