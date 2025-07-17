@@ -2,7 +2,6 @@ from datetime import datetime
 from fastapi import APIRouter
 from sqlmodel import Session, select
 
-# Import our own modules
 from ..database import engine
 from ..models import Contact
 from ..schemas import IdentifyRequest, IdentifyResponse, ContactResponse
@@ -11,7 +10,6 @@ router = APIRouter()
 
 @router.post("/identify", response_model=IdentifyResponse)
 def identify(request: IdentifyRequest):
-    # This is the exact same logic as before, just moved here
     with Session(engine) as session:
         # Step 1: Find all contacts that directly match the request
         direct_matches = session.exec(
